@@ -11,7 +11,13 @@ Project also availble on OSHWLab: https://oshwlab.com/sctmayberry/ethernet_raspi
 ![PCB of enj28j60 module](PCB_PCB_ethernet_raspi.png?raw=true)
 
 # Raspberry Pi Integration
-## Setup
+## Hardware Setup
+Connect pins 
+| Syntax      | Description |
+| :----:      | :----:      |
+| Header      | Title       |
+| Paragraph   | Text        |
+## Software Setup
 Software integration steps are taken from: https://www.raspberrypi-spy.co.uk/2020/05/adding-ethernet-to-a-pi-zero/. For posterity sake, they are listed here as well.
 
 Enable Spi and enable dtoverlay of enc28j60
