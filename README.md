@@ -28,8 +28,8 @@ The device should now be working.
 edit the file:</br>
 `sudo nano /lib/systemd/system/setmac.service`</br>
 and add:</br>
-`[Unit]</br>
-Description=Set MAC address for ENC28J60 module</br>
+```[Unit]
+Description=Set MAC address for ENC28J60 module
 Wants=network-pre.target
 Before=network-pre.target
 BindsTo=sys-subsystem-net-devices-eth0.device
@@ -39,7 +39,7 @@ Type=oneshot
 ExecStart=/sbin/ip link set dev eth0 address b8:27:eb:00:00:01
 ExecStart=/sbin/ip link set dev eth0 up
 [Install]
-WantedBy=multi-user.target`
+WantedBy=multi-user.target```
 Finally, run:
 `sudo chmod 644 /lib/systemd/system/setmac.service
 sudo systemctl daemon-reload
