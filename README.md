@@ -16,7 +16,7 @@ Connect pins
 | Syntax      | Description |
 | :----:      | :----:      |
 | Header      | Title       |
-| Paragraph   | Text        |
+| Hello       | Text        |
 ## Software Setup
 Software integration steps are taken from: https://www.raspberrypi-spy.co.uk/2020/05/adding-ethernet-to-a-pi-zero/. For posterity sake, they are listed here as well.
 
