@@ -13,10 +13,15 @@ Project also availble on OSHWLab: https://oshwlab.com/sctmayberry/ethernet_raspi
 # Raspberry Pi Integration
 ## Hardware Setup
 Connect pins 
-| Syntax      | Description |
-| :----:      | :----:      |
-| Header      | Title       |
-| Hello       | Text        |
+| Module Pin      |  Pi Pin     |
+| :----:          | :----:      |
+| 3v3             | 3v3          |
+| GND             | GND          |
+| MOSI            | Pin 19 (GPIO 10)          |
+| MISO            | Pin 21 (GPIO 9)          |
+| CS              | Pin 24 (GPIO 8)          |
+| Reset           | -          |
+| INT             | Pin 22 (GPIO25)          |
 ## Software Setup
 Software integration steps are taken from: https://www.raspberrypi-spy.co.uk/2020/05/adding-ethernet-to-a-pi-zero/. For posterity sake, they are listed here as well.
 
