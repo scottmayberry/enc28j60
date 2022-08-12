@@ -5,4 +5,4 @@ It is also availble on OSHWLab: https://oshwlab.com/sctmayberry/ethernet_raspi
 
 # Schematics and PCB
 ![Schematic of enj28j60 module](Schematic_ethernet_raspi_2022-08-12.png?raw=true)
-![PCB of enj28j60 module](PCB_PCB_ethernet_raspi_2022-08-12 (2).png?raw=true)
+![PCB of enj28j60 module](PCB_PCB_ethernet_raspi.png?raw=true)
