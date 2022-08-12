@@ -15,10 +15,10 @@ Project also availble on OSHWLab: https://oshwlab.com/sctmayberry/ethernet_raspi
 Software integration steps are taken from: https://www.raspberrypi-spy.co.uk/2020/05/adding-ethernet-to-a-pi-zero/. For posterity sake, they are listed here as well.
 
 Enable Spi and enable dtoverlay of enc28j60</br>
-`sudo nano /boot/config.txt`
-Uncomment (delete # character) from the line:\
-`#dtparam=spi=on`
-Add line:
+`sudo nano /boot/config.txt`</br>
+Uncomment (delete # character) from the line:</br>
+`#dtparam=spi=on`</br>
+Add line:</br>
 `dtoverlay=encj28j60`
 Reboot
 `sudo reboot`
