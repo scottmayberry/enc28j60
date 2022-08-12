@@ -20,8 +20,9 @@ Connect pins
 | MOSI            | Pin 19 (GPIO 10)          |
 | MISO            | Pin 21 (GPIO 9)          |
 | CS              | Pin 24 (GPIO 8)          |
-| Reset           | -          |
 | INT             | Pin 22 (GPIO25)          |
+| Reset           | -          |
+
 ## Software Setup
 Software integration steps are taken from: https://www.raspberrypi-spy.co.uk/2020/05/adding-ethernet-to-a-pi-zero/. For posterity sake, they are listed here as well.
 
