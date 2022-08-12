@@ -15,20 +15,20 @@ Project also availble on OSHWLab: https://oshwlab.com/sctmayberry/ethernet_raspi
 Software integration steps are taken from: https://www.raspberrypi-spy.co.uk/2020/05/adding-ethernet-to-a-pi-zero/. For posterity sake, they are listed here as well.
 
 Enable Spi and enable dtoverlay of enc28j60
-'sudo nano /boot/config.txt'
+`sudo nano /boot/config.txt`
 Uncomment (delete # character) from the line:
-'#dtparam=spi=on'
+`#dtparam=spi=on`
 Add line:
-'dtoverlay=encj28j60'
+`dtoverlay=encj28j60`
 Reboot
-'sudo reboot'
+`sudo reboot`
 The device should now be working.
 
 ## Set Mac Address
 edit the file:
-'sudo nano /lib/systemd/system/setmac.service'
+`sudo nano /lib/systemd/system/setmac.service`
 and add:
-'[Unit]
+`[Unit]
 Description=Set MAC address for ENC28J60 module
 Wants=network-pre.target
 Before=network-pre.target
@@ -39,10 +39,10 @@ Type=oneshot
 ExecStart=/sbin/ip link set dev eth0 address b8:27:eb:00:00:01
 ExecStart=/sbin/ip link set dev eth0 up
 [Install]
-WantedBy=multi-user.target'
+WantedBy=multi-user.target`
 Finally, run:
-'sudo chmod 644 /lib/systemd/system/setmac.service
+`sudo chmod 644 /lib/systemd/system/setmac.service
 sudo systemctl daemon-reload
-sudo systemctl enable setmac.service'
+sudo systemctl enable setmac.service`
 And reboot:
-'sudo reboot'
+`sudo reboot`
