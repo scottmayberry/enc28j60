@@ -19,17 +19,17 @@ Enable Spi and enable dtoverlay of enc28j60</br>
 Uncomment (delete # character) from the line:</br>
 `#dtparam=spi=on`</br>
 Add line:</br>
-`dtoverlay=encj28j60`
-Reboot
-`sudo reboot`
+`dtoverlay=encj28j60`</br>
+Reboot</br>
+`sudo reboot`</br>
 The device should now be working.
 
 ## Set Mac Address
-edit the file:
-`sudo nano /lib/systemd/system/setmac.service`
-and add:
-`[Unit]
-Description=Set MAC address for ENC28J60 module
+edit the file:</br>
+`sudo nano /lib/systemd/system/setmac.service`</br>
+and add:</br>
+`[Unit]</br>
+Description=Set MAC address for ENC28J60 module</br>
 Wants=network-pre.target
 Before=network-pre.target
 BindsTo=sys-subsystem-net-devices-eth0.device
