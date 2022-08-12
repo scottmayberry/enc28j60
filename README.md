@@ -4,4 +4,4 @@ The enc28j60 is an ethernet module with an SPI interface. This project includes 
 It is also availble on OSHWLab: https://oshwlab.com/sctmayberry/ethernet_raspi
 
 # Schematics
-
+![Schematic of enj28j60 module](Schematic_ethernet_raspi_2022-08-12.png?raw=true)
