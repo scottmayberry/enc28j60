@@ -36,7 +36,7 @@ Uncomment (delete # character) from the line:
 ```
 Add line:
 ```
-dtoverlay=encj28j60
+dtoverlay=enc28j60
 ```
 Reboot
 ```
